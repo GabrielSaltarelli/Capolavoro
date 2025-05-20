@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Il Mio Capolavoro - Unica Platform</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Palette rosso e bianco (Malta) */
+    :root {
+      --bs-primary: #be0000;
+      --bs-body-bg: #ffffff;
+      --bs-body-color: #333333;
+      --bs-light: #ffffff;
+    }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bs-body-bg); color: var(--bs-body-color); scroll-behavior: smooth; }
+    .hero { background: url('https://source.unsplash.com/1600x900/?malta,travel') no-repeat center center; background-size: cover; color: white; height: 90vh; display: flex; align-items: center; position: relative; }
+    .hero-overlay { background: rgba(0,0,0,0.5); height: 100%; width: 100%; position: absolute; top: 0; left: 0; }
+    .hero-content { position: relative; z-index: 2; }
+    .feature-icon { font-size: 2.5rem; color: var(--bs-primary); }
+    section { padding-top: 80px; }
+    /* Footer dark stripe */
+    footer.bg-dark { color: #eeeeee; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-danger" href="#">Unica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-danger active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#esplorazione">Esplorazione</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#istruzione">Istruzione</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#giudizio">Giudizio Finale</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#motivazione">Perché PCTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-center text-white">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold">Il mio capolavoro</h1>
+      <p class="lead my-4">Un'esperienza di istruzione unica di 2 settimane nella splendida isola di Malta.</p>
+      <a href="#capolavoro" class="btn btn-primary btn-lg">Scopri di più</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <a href="#esplorazione" class="text-decoration-none text-dark">
+            <i class="fa-solid fa-map-location-dot feature-icon mb-3"></i>
+            <h5>Esplorazione</h5>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="#istruzione" class="text-decoration-none text-dark">
+            <i class="fa-solid fa-book feature-icon mb-3"></i>
+            <h5>Istruzione</h5>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="#giudizio" class="text-decoration-none text-dark">
+            <i class="fa-solid fa-gavel feature-icon mb-3"></i>
+            <h5>Giudizio Finale</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capolavoro Section -->
+  <section id="capolavoro" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 text-danger">Il Mio Capolavoro</h2>
+      <div class="p-4 border rounded bg-white">
+        <p class="text-center fs-5">Qui descriverò il mio viaggio di istruzione a Malta per 2 settimane: esperienze, sfide e scoperte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Esplorazione Section with Carousel -->
+  <section id="esplorazione" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-danger">Esplorazione</h2>
+      <div id="carouselEsplorazione" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/800x400/?valletta" class="d-block w-100" alt="Valletta">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Valletta</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?mdina" class="d-block w-100" alt="Mdina">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Mdina</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?comino,blueting" class="d-block w-100" alt="Comino & Blue Lagoon">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Comino & Blue Lagoon</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?university,maltastudent" class="d-block w-100" alt="Campus Hub">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Campus Hub</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?craft,village" class="d-block w-100" alt="Ta' Qali Craft Village">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Ta' Qali Craft Village</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?dockyard" class="d-block w-100" alt="Cospicua">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Cospicua</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?harbor" class="d-block w-100" alt="Senglea">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Senglea</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?fortress" class="d-block w-100" alt="Vittoriosa">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Vittoriosa</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x400/?catacombs" class="d-block w-100" alt="Le Catacombe">
+            <div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-75 rounded p-2">
+              <h5>Le Catacombe</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEsplorazione" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Precedente</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselEsplorazione" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Successivo</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Istruzione Section -->
+  <section id="istruzione" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 text-danger">Istruzione</h2>
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+          <p>Suspendisse potenti. Praesent venenatis metus at tortor pulvinar varius. Sed libero. Nulla facilisi.</p>
+          <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <!-- Placeholder per foto attestato -->
+          <div class="border rounded p-2">
+            <img src="https://via.placeholder.com/250x350?text=Attestato" class="img-fluid" alt="Attestato di frequenza">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Giudizio Finale Section -->
+  <section id="giudizio" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-danger">Giudizio Finale</h2>
+      <div class="p-4 border rounded bg-white">
+        <p>Qui esprimerò il mio giudizio complessivo sull’esperienza, l’impatto personale e i consigli per futuri partecipanti.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motivazione PCTO Section -->
+  <section id="motivazione" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 text-danger">Perché questo Capolavoro e PCTO</h2>
+      <div class="p-4 border rounded bg-white">
+        <p>Ho scelto questo viaggio perché rappresenta il culmine delle mie attività di PCTO (Percorsi per le Competenze Trasversali e per l’Orientamento), un’esperienza che integra formazione teorica e pratica sul campo.</p>
+        <p><strong>PCTO</strong> significa <em>Percorsi per le Competenze Trasversali e per l’Orientamento</em>, progetti multidisciplinari obbligatori per l’alternanza scuola-lavoro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center py-4">
+    <div class="container">
+      <p class="mb-1 text-light">&copy; Gabriel Saltarelli</p>
+      <p class="mb-3 text-light">ITET de Viti de Marco</p>
+      <div>
+        <a href="https://www.facebook.com/" class="text-light me-3" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="https://www.instagram.com/" class="text-light" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
